@@ -1,0 +1,19 @@
+[user]
+	name = Srinath Vadlamani
+	email = srinath@txcorp.com
+[core]
+	excludesfile = /Users/srinath/.gitignore_global
+[diff]
+tool = mvim
+[difftool "mvim"]
+	cmd = mvim -d $LOCAL $REMOTE
+	path = 
+[merge]
+tool = mvim
+[mergetool "mvim"]
+  cmd=mvim -d -g $LOCAL $MERGED $REMOTE
+	keepbackup=false
+[color]
+	ui = true
+[alias]
+  lol = log --pretty= --abbrev-commit --graph --decorate
